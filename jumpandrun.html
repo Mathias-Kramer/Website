@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+</head>
+
+<body>
+
+
+    <nav>
+        <a href="index.html"><img src="icon21.png"></a>
+        <div class="nav-links" id="navLinks">
+            <i class="fa fa-times" onclick="hideMenu()"></i>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="index.html">ABOUT</a></li>
+                <li><a href="index.html">PROJECTS</a></li>
+                <li><a href="kontakt.php">CONTACT</a></li>
+                <li><a href="Login.html"><i id="login-io" class="fa fa-user" aria-hidden="true"></i></a></li>
+            </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>
+
+
+    <br>
+    <br>
+    <h1 id="elonmarsh">Unity Standart Jump and Run</h1>
+    <hr id="hr-vid">
+    <br>
+    <br>
+    <br><br>
+
+
+    <section id="content-elon">
+
+
+        <div class="slideshow-container">
+
+
+            <!-- Full-width images with number and caption text -->
+            <div class="mySlides fade">
+                <div class="numbertext">1 / 2</div>
+                <img src="jump.jpeg" style="width: 100%; height: 100%;">
+
+
+                <div class="text">Main Menu</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">2 / 2</div>
+                <img src="jumpandrun2.jpeg" style="width: 100%; height: 100%;">
+                <div class="text">Gameplay</div>
+            </div>
+
+
+
+
+            <!-- Next and previous buttons -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <br>
+
+
+        <div id="download-btns">
+            <a href='https://play.google.com/store/apps/details?id=com.amazon.mShop.android.shopping&gl=DE&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'><img alt='Get it on Google Play' src='https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png' /></a>
+
+        </div>
+
+        <div id="beschreibunggame">
+            <h1>Über dieses Spiel</h1>
+            <p>Unity Standart Jump and Run ist ein kostenloses Jump and Run Game verfügbar für Android.<br> Kämpfe dich durchs Wellten mit einem Roboter als Spieler, <br> indem du Hindernissen ausweichst, dabei gegner auschaltest und Coins einsammeltst.<br>
+            </p>
+            <p>
+                <b>Besonderheiten:</b><br> -Ohne Probleme Auch offline Spielbar <br> -Starke Assets zum Aufsammeln <br> -Viele Level<br>
+            </p>
+            <p>
+                <b>Spielanleitung:</b><br> Mit dem Joystick den Spieler bewegen und mit dem Button springen. Man schießt in dem man auf den Player klickt.
+            </p>
+        </div>
+        <br><br>
+        <hr id="hr-vid">
+        <br>
+        <div id="game-des-tech">
+            <p><b>Version</b><br> 1.0
+            </p>
+
+            <p><b>Aktualisiert am</b><br> 1.0
+            </p>
+
+            <p><b>Erforderliche Android-Version
+            </b><br> 5.0
+            </p>
+
+            <p><b>Downloads</b><br> 0
+            </p>
+
+            <p><b>Altersfreigabe</b><br> Ab 6 Jahren
+            </p>
+
+            <p><b>Datensicherheit</b><br> Detail
+            </p>
+            <p><b>Interaktive Elemente
+            </b><br> Offlinekäufe
+            </p>
+            <p><b>Veröffentlichungsdatum</b><br>05.Juni.2022
+            </p>
+
+        </div>
+
+
+    </section>
+
+
+
+
+    <br><br><br>
+
+
+
+
+
+
+
+
+
+    <div id="footer-div">
+
+
+
+        <div>
+            <p id="follow-h">Follow Me On:</p>
+
+            <div class="icons">
+                <a href="https://www.facebook.com/mathias.kramer.5439"> <i class="fa fa-facebook-official" aria-hidden="true"></i></a>
+                <a href="https://twitter.com/mathiasletsgo"><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
+                <a href="https://www.instagram.com/mathiaskramer_/?hl=en"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                <a href="https://www.linkedin.com/in/mathias-kramer-b92529225/"> <i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+            </div>
+        </div>
+
+        <div id="credit-con">
+            <p>Made By <br> Mathias Kramer</p>
+        </div>
+
+
+        <div id="daten">
+            <a href="impressum.html">Datenschutz</a><br><br>
+            <a href="impressum.html">Impressum</a><br><br>
+            <a href="kontakt.php">Kontakt</a>
+        </div>
+
+    </div>
+
+
+    <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+
+        // Next/previous controls
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        // Thumbnail image controls
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            if (n > slides.length) {
+                slideIndex = 1
+            }
+            if (n < 1) {
+                slideIndex = slides.length
+            }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+        }
+    </script>
+
+    <script>
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu() {
+            navLinks.style.right = "0px";
+        }
+
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+    </script>
+
+
+
+</body>
+
+</html>
